@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Vishnu Organic Dairy</title>
+    <style>
+        body { font-family: Arial; margin: 0; padding: 0; background: #f6fff8; }
+        header { background: #2d6a4f; color: white; padding: 20px; text-align: center; }
+        nav a { margin: 15px; color: white; text-decoration: none; font-size: 18px; }
+        .products { display: flex; justify-content: center; gap: 30px; padding: 40px; flex-wrap: wrap; }
+        .card { background: white; padding: 20px; width: 250px; border-radius: 10px; 
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        .btn { background: #40916c; padding: 10px 20px; color: white; border-radius: 6px; text-decoration: none; }
+        footer { background: #1b4332; color: white; text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Organic Products</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Buy Now</a>
+    </nav>
+</header>
+
+<div class="products">
+    <div class="card">
+        <h3>Organic Cow Milk</h3>
+        <p>₹60 / litre</p>
+        <a class="btn" href="payment.html?product=milk">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Pure Ghee</h3>
+        <p>₹650 / kg</p>
+        <a class="btn" href="payment.html?product=ghee">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <h3>Curd</h3>
+        <p>₹80 / litre</p>
+        <a class="btn" href="payment.html?product=curd">Buy Now</a>
+    </div>
+</div>
+
+<footer>
+    © 2025 Vishnu Organic Dairy.
+</footer>
+
+</body>
+</html>

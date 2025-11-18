@@ -1,247 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WH38FPCH');</script>
-<!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QSK3MM7CBW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QSK3MM7CBW' , { 'debug_mode':true });
-</script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vishnu's Pure Dairy Farm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Organic Dairy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: #fefefe;
-            color: #333;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: url('https://images.unsplash.com/photo-1598966574512-73c3e565b1c5?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            padding: 20px;
-            backdrop-filter: blur(4px);
-            position: relative;
-        }
-
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.55);
-        }
-
-        .hero-content {
-            z-index: 2;
-            max-width: 700px;
-            animation: fadeIn 1.5s ease;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-
-        .hero p {
-            margin: 20px 0;
-            font-size: 1.2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #4CAF50;
-            padding: 12px 28px;
-            border-radius: 30px;
-            color: white;
-            font-size: 1.1rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #3a943e;
-            transform: scale(1.05);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px);} 
-            to { opacity: 1; transform: translateY(0);} 
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 10%;
-            background: #fff;
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 2.3rem;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        /* Services */
-        .services {
-            padding: 80px 10%;
-            background: #f4f4f4;
-        }
-
-        .services h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: 0.3s;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            transform: translateY(-7px);
-        }
-
-        .service-card img {
-            width: 80px;
-            margin-bottom: 15px;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 80px 10%;
-            text-align: center;
-        }
-
-        .contact h2 {
-            margin-bottom: 20px;
-        }
-
-        .contact button {
-            padding: 12px 25px;
-            font-size: 1.1rem;
-            background: #4CAF50;
-            border: none;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        .contact button:hover {
-            background: #398e3d;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #2d6a4f; color: white; padding: 20px; text-align: center; }
+        nav a { margin: 15px; color: white; text-decoration: none; font-size: 18px; }
+        .hero { background: url('https://i.imgur.com/PNGR9i0.jpg') center/cover; height: 60vh; 
+                display: flex; justify-content: center; align-items: center; color: white; font-size: 40px; font-weight: bold; }
+        .section { padding: 40px; text-align: center; }
+        .btn { background: #40916c; padding: 12px 25px; color: white; text-decoration: none; border-radius: 6px; }
+        footer { background: #1b4332; color: white; text-align: center; padding: 15px; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH38FPCH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!-- Header with Logo -->
-    <header style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 5; text-align: center;">
-        <img src="C:/Users/vishn/Downloads/MY LOGO-VV.png" alt="Vishnu Logo" style="height: 120px; width: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-    </header>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Vishnu's Pure & Fresh Dairy Farm</h1>
-            <p>Farm-fresh milk, organic products, and healthy goodness delivered directly from nature to your home.</p>
-            <a href="#contact" class="btn">Contact Now</a>
-            <a href="#services" class="btn" style="margin-left: 10px; background:#fff; color:#333;">Explore More</a>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Our Dairy Farm</h2>
-        <p>
-            Welcome to Vishnu Vardhan's premium dairy farm where quality meets purity.
-            Our cows are raised with utmost care in a clean, green, and stress‑free environment.
-            We believe in delivering unprocessed, chemical‑free, 100% natural dairy products.
-            Freshness and hygiene are the pillars of our farm.
-        </p>
-    </section>
+<header>
+    <h1>Vishnu Organic Dairy farm</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Buy Now</a>
+    </nav>
+</header>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Our Fresh Products</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" />
-                <h3>Fresh Milk</h3>
-                <p>Pure & chemical‑free fresh milk from healthy cows.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2975/2975175.png" />
-                <h3>Organic Ghee</h3>
-                <p>Hand‑churned A2 desi ghee for maximum health benefits.</p>
-            </div>
-            <div class="service-card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1864/1864539.png" />
-                <h3>Curd & Butter</h3>
-                <p>Made naturally without preservatives.</p>
-            </div>
-        </div>
-    </section>
+<div class="hero">
+    100% Organic Dairy Products
+</div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Want fresh dairy delivered? Contact us now!</p>
-        <button onclick="alert('Thank you Vishnu! We will reach out to you shortly.')">Send Message</button>
-    </section>
+<div class="section">
+    <h2>Fresh. Pure. Healthy.</h2>
+    <p>We deliver farm-fresh organic milk and dairy products straight from our cows to your home.</p>
+    <a href="products.html" class="btn">Explore Products</a>
+</div>
 
-    <footer>
-        © 2025 Vishnu's Dairy Farm | Pure • Organic • Fresh
-    </footer>
+<footer>
+    © 2025 Vishnu Organic Dairy. All Rights Reserved.
+</footer>
 
 </body>
 </html>

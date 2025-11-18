@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products - Vishnu's Dairy Farm</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f7f7f2;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        .products {
+            padding: 60px 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: .2s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 120px;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #3d9442;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    Vishnu’s Organic Dairy Products
+</header>
+
+<section class="products">
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" />
+            <h2>Fresh Milk</h2>
+            <p>Pure, chemical-free fresh cow milk.</p>
+            <a href="payment.html?product=Fresh Milk&price=60" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2975/2975175.png" />
+            <h2>Organic Ghee</h2>
+            <p>Hand-churned A2 desi ghee.</p>
+            <a href="payment.html?product=Organic Ghee&price=1200" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1864/1864539.png" />
+            <h2>Curd & Butter</h2>
+            <p>Fresh, homemade and preservative-free.</p>
+            <a href="payment.html?product=Curd & Butter&price=150" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

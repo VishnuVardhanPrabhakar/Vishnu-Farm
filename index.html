@@ -6,17 +6,152 @@
     <title>Vishnu Organic Dairy</title>
 
     <style>
-        body { margin: 0; font-family: 'Poppins', sans-serif; background: #f4fff8; color: #1b4332; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #2d6a4f; color: #fff; }
-        nav a { margin-left: 20px; color: white; text-decoration: none; font-size: 17px; }
-        .hero { height: 70vh; background: url('https://i.imgur.com/Nirtu0B.jpeg') center/cover no-repeat; 
-                display: flex; align-items: center; justify-content: center; color: white; font-size: 45px; font-weight: bold; 
-                text-shadow: 2px 2px 10px #000; }
-        .section { padding: 50px 20px; text-align: center; }
-        .btn { background: #40916c; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-size: 18px; }
-        footer { background: #1b4332; color: white; padding: 20px; text-align: center; margin-top: 20px; }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f5fff7;
+            color: #1B4332;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #1B4332;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #40916C;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: url('https://i.imgur.com/Nirtu0B.jpeg') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 60px;
+        }
+
+        .hero-box {
+            background: rgba(255,255,255,0.65);
+            backdrop-filter: blur(12px);
+            padding: 40px;
+            max-width: 450px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .hero-box h1 {
+            font-size: 45px;
+            margin: 0 0 15px 0;
+            color: #1B4332;
+        }
+
+        .hero-box p {
+            font-size: 18px;
+            margin-bottom: 22px;
+            line-height: 1.5;
+        }
+
+        .btn-main {
+            background: #2D6A4F;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-main:hover {
+            background: #40916C;
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .feature-box {
+            padding: 25px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-box img {
+            width: 70px;
+            margin-bottom: 15px;
+        }
+
+        /* MID CTA */
+        .cta {
+            margin: 60px;
+            background: #2D6A4F;
+            padding: 45px;
+            border-radius: 18px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta a {
+            background: white;
+            padding: 12px 25px;
+            color: #2D6A4F;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 7px;
+        }
+
+        .cta a:hover {
+            background: #d1ffe2;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            background: #1B4332;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 15px;
+        }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -28,19 +163,58 @@
     </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-    Pure Organic Dairy Products
+    <div class="hero-box">
+        <h1>Pure • Organic • Fresh</h1>
+        <p>Experience farm-fresh dairy products made with love, care, and 100% natural methods. Straight from our cows to your home.</p>
+        <a href="products.html" class="btn-main">Explore Products</a>
+    </div>
 </div>
 
-<div class="section">
-    <h2>Fresh From Our Farm</h2>
-    <p>We provide 100% natural, chemical-free, fresh dairy products directly from our organic farm.</p>
+<!-- FEATURES -->
+<section class="features">
+    <h2>Why Choose Vishnu Organic Dairy?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1998/1998677.png">
+            <h3>100% Organic</h3>
+            <p>Free from chemicals, hormones, and preservatives.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2382/2382461.png">
+            <h3>Fresh Daily</h3>
+            <p>Products delivered straight from our local farm.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+            <h3>High Nutrition</h3>
+            <p>Packed with protein, calcium and natural goodness.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/4320/4320365.png">
+            <h3>Farm to Home</h3>
+            <p>Freshness guaranteed from our cows to your kitchen.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MID CTA -->
+<div class="cta">
+    <h2>Start Your Organic Lifestyle Today!</h2>
+    <p>Switch to purity — your body deserves the best.</p>
     <br>
-    <a href="products.html" class="btn">Explore Products</a>
+    <a href="products.html">Buy Organic Products</a>
 </div>
 
 <footer>
-    © 2025 Vishnu Organic Dairy. All Rights Reserved.
+    © 2025 Vishnu Organic Dairy • All Rights Reserved
 </footer>
 
 </body>
